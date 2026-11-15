@@ -1,0 +1,96 @@
+body {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-color: #212529;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .nav-link {
+    color: #adb5bd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar .nav-link:hover {
+    color: #fff;
+    background-color: #343a40;
+}
+
+.sidebar .nav-link.active {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.logo-box {
+    width: 32px;
+    height: 32px;
+    background-color: #212529;
+    border: 2px solid #6c757d;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: serif;
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+    border-top: 1px solid #343a40;
+    padding-top: 15px;
+}
+
+.icon-gem {
+    color: #f39c12;
+}
+
+.card {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.price-text {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.features-text {
+    font-size: 0.75rem;
+    color: #6c757d;
+    line-height: 1.2;
+}
+
+.btn-buy {
+    border-color: #0d6efd;
+    color: #0d6efd;
+}
+
+.btn-buy:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.catalog-thumbnail {
+    background-color: #55595c;
+    color: #fff;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
