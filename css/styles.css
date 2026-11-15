@@ -1,0 +1,116 @@
+body {
+    background-color: #f8f9fa; /* Светло-серый фон */
+    min-height: 100vh; /* На всю высоту экрана */
+}
+
+/* =========================================
+   Сайдбар (Левое меню)
+   ========================================= */
+.sidebar {
+    background-color: #212529; /* Темный фон */
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Чтобы прижать профиль вниз */
+}
+
+/* Ссылки в меню */
+.sidebar .nav-link {
+    color: #adb5bd; /* Серый текст */
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Расстояние между иконкой и текстом */
+}
+
+/* Наведение на ссылку */
+.sidebar .nav-link:hover {
+    color: #fff;
+    background-color: #343a40;
+}
+
+/* Активная ссылка (синяя) */
+.sidebar .nav-link.active {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+/* Логотип (квадратик с буквой B) */
+.logo-box {
+    width: 32px;
+    height: 32px;
+    background-color: #212529;
+    border: 2px solid #6c757d;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: serif;
+}
+
+/* Нижняя часть сайдбара (Профиль) */
+.sidebar-bottom {
+    margin-top: auto; /* Прижимает блок к самому низу */
+    border-top: 1px solid #343a40;
+    padding-top: 15px;
+}
+
+/* Иконка бриллианта */
+.icon-gem {
+    color: #f39c12; /* Оранжевый */
+}
+
+/* =========================================
+   Карточки товаров
+   ========================================= */
+.card {
+    border: 1px solid #dee2e6; /* Светло-серая рамка */
+    border-radius: 8px; /* Скругленные углы */
+    transition: transform 0.2s, box-shadow 0.2s; /* Плавная анимация */
+}
+
+/* Эффект при наведении на карточку */
+.card:hover {
+    transform: translateY(-5px); /* Приподнимается на 5px */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Появляется тень */
+}
+
+/* Стили для цены */
+.price-text {
+    font-size: 2rem; /* Крупный шрифт */
+    font-weight: 500;
+}
+
+/* Стили для мелкого текста (описания) */
+.features-text {
+    font-size: 0.75rem; /* Мелкий шрифт */
+    color: #6c757d; /* Серый цвет */
+    line-height: 1.2;
+}
+
+/* Кнопка "Купить" (переопределяем стили Bootstrap) */
+.btn-buy {
+    border-color: #0d6efd; /* Синяя рамка */
+    color: #0d6efd; /* Синий текст */
+}
+
+/* Кнопка при наведении */
+.btn-buy:hover {
+    background-color: #0d6efd; /* Заливается синим */
+    color: white; /* Текст становится белым */
+}
+
+/* =========================================
+   Стили для страницы Каталог
+   ========================================= */
+.catalog-thumbnail {
+    background-color: #55595c; /* Темно-серый фон */
+    color: #fff; /* Белый текст */
+    height: 200px; /* Высота картинки */
+    display: flex; /* Чтобы отцентрировать текст */
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
